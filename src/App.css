@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+nav {
+  z-index: 10;
+}
+.navDropdown {
+  z-index: 5;
+}
+
+.btnPrimary {
+  @apply w-fit flex items-center justify-center gap-2 py-3 px-8 bg-blue-400 font-semibold text-white rounded dark:hover:bg-secondary hover:bg-primary dark:hover:text-primary transition-all duration-300;
+}
+.btnSecondary {
+  @apply w-fit flex items-center justify-center gap-2 py-3 px-8 bg-gray-300 font-semibold text-black rounded hover:opacity-75 transition-all duration-300;
+}
+.active {
+  @apply border-blue-300 border-b-[1.75px] bg-gray-50 dark:bg-bgLtDark;
+}
+.activeMob {
+  @apply border-l-2 border-blue-300;
+}
