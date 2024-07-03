@@ -12,8 +12,8 @@ const DarkModeButton = ({ id, theme, setTheme }) => {
           } rounded-full`}
         >
           <div
-            className={`w-7 h-7 text-2xl bg-white  flex items-center justify-center rounded-full transition-all duration-900 ease-in-out ${
-              theme ? "ml-7 bg-bgDark" : " text-bgDark"
+            className={`w-7 h-7 text-2xl bg-white dark:bg-bgDark flex items-center justify-center rounded-full transition-all duration-900 ease-in-out ${
+              theme ? "ml-7" : " text-White"
             }`}
           >
             {theme ? <MdDarkMode /> : <MdLightMode />}
