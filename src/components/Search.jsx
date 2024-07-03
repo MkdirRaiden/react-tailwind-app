@@ -8,6 +8,7 @@ const Search = ({ toggleSearch }) => {
         <button
           className="absolute top-2 left-2 cursor-default text-2xl"
           type="submit"
+          onClick={(e) => e.preventDefault()}
         >
           <HiMiniMagnifyingGlass />
         </button>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link as NavLink } from "react-router-dom";
 import Search from "../components/Search";
-import { FiUser } from "react-icons/fi";
+import { FiLogIn } from "react-icons/fi";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import DarkModeButton from "./DarkModeButton";
@@ -33,11 +33,11 @@ const NavbarItems = ({
         <>
           {" "}
           <DarkModeButton id={id} theme={theme} setTheme={setTheme} />
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 items-center">
             <button
               onClick={toggleSearch}
               className={`text-2xl hover:bg-gray-100 ${
-                isLoggedIn ? "px-2 py-1" : {}
+                isLoggedIn ? "w-9 h-9 p-1 flex justify-center items-center" : {}
               } dark:hover:bg-bgLtDark p-1 rounded-full`}
             >
               <HiMiniMagnifyingGlass />
@@ -82,7 +82,7 @@ const NavbarItems = ({
                 to={"/signin"}
                 className="text-2xl hover:bg-gray-100 dark:hover:bg-bgLtDark p-1 rounded-full"
               >
-                <FiUser />
+                <FiLogIn />
               </NavLink>
             )}
           </div>

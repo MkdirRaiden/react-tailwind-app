@@ -62,7 +62,7 @@ const Signup = () => {
           <div className="flex flex-col gap-1">
             <label htmlFor="name">Name:</label>
             <input
-              className="bg-gray-100 focus:outline-none px-4 py-2 h-10 rounded-full"
+              className="bg-gray-100 focus:outline-none px-4 py-2 h-10 rounded-sm"
               type="text"
               id="name"
               name="name"
@@ -71,7 +71,7 @@ const Signup = () => {
           <div className="flex flex-col gap-1">
             <label htmlFor="email">Email:</label>
             <input
-              className="bg-gray-100 focus:outline-none px-4 py-2 h-10 rounded-full"
+              className="bg-gray-100 focus:outline-none px-4 py-2 h-10 rounded-sm"
               type="email"
               id="email"
               name="email"
@@ -81,7 +81,7 @@ const Signup = () => {
             <label htmlFor="password">Password:</label>
             <div className="relative">
               <input
-                className="bg-gray-100 w-full focus:outline-none px-4 py-2 h-10 rounded-full"
+                className="bg-gray-100 w-full focus:outline-none px-4 py-2 h-10 rounded-sm"
                 type={!showPassword ? "password" : "text"}
                 id="password"
                 name="password"
@@ -102,7 +102,7 @@ const Signup = () => {
             <label htmlFor="confirmPassword">Confirm Password:</label>
             <div className="relative">
               <input
-                className="bg-gray-100 w-full focus:outline-none px-4 py-2 h-10 rounded-full"
+                className="bg-gray-100 w-full focus:outline-none px-4 py-2 h-10 rounded-sm"
                 type={!showConfirmPassword ? "password" : "text"}
                 id="confirmPassword"
                 name="confirmPassword"

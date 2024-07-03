@@ -11,7 +11,7 @@ import Signup from "./pages/Signup";
 function App() {
   return (
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename={"/react-tailwind-app/"}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
